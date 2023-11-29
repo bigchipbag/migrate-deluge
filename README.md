@@ -8,6 +8,8 @@ In the target's deluge config directory run the following:
 Where the source download path is like 'C:\Downloads\' and Target's is like '/mnt/downloads/'
 
 ## Instructions
+(these are written for my specific use case of Windows to Linux.)
+
 Pause all torrents in Deluge on Windows. Use the File->Quit option to close Deluge, and verify the system tray icon is gone and the program is closed.
 
 Copy your entire existing deluge config from C:\Users\USERNAME\AppData\Roaming\deluge to ~/.config/deluge
