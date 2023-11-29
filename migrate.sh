@@ -1,2 +1,4 @@
 #/bin/bash
-sudo sed -i -E 's|($1)|$2|g' torrents.state
+location = $2
+locationEscaped=$(sed 's/[^^]/[&]/g; s/\^/\\^/g' <<<"$location")
+sudo sed -i -E 's|(location)|$2|g' torrents.state
