@@ -4,14 +4,14 @@ Can also assist with situations where your OS causes issues with drive names/let
 ## Usage
 In the target's deluge config directory run the following:  
 ./migrate.sh 'Source's download path' 'Target's download path'  
-Where the source download path is like 'C:\Downloads\' and Target's is like '/mnt/downloads/'  
+Where the source download path has no special characters, or they are escaped like 'C:\\Downloads\\' and Target's is unrestricted like '/mnt/downloads/'  
 ## Instructions
 (these are written for my specific use case of Windows to Linux.)  
 Pause all torrents in Deluge on Windows. Use the File->Quit option to close Deluge, and verify the system tray icon is gone and the program is closed.  
 Copy your entire existing deluge config from C:\Users\USERNAME\AppData\Roaming\deluge to ~/.config/deluge  
 Run the migrate script in your deluge config directory (~/.config/deluge) with the following arguments:  
 ./migrate.sh 'Windows download path' 'Linux download path'  
-e.g. ./migrate.sh 'C:\downloads\' '/mnt/fileserver/downloads/'  
+e.g. ./migrate.sh 'C:\\downloads\\' '/mnt/fileserver/downloads/'  
 You'll need to repeat this command for every download folder you use on Windows. 
 Open deluge and confirm that all torrents show 100% and are still paused. Resume torrents and enjoy a migrated install without days of re-checking.
 ## Example
@@ -20,7 +20,7 @@ Current windows server has a local disk G: with a folder G:\seeds that contains 
 Target debian machine has a fresh install of Deluge with config files in /home/user/.config/deluge/  
 Target debian machine has mounted the drive from windows as /mnt/files/
 Close down deluge on windows server, copy files from %appdata%/deluge to /home/user/.config/deluge/  
-Copy migrate.sh to /home/user/.config/deluge/ and run ./migrate.sh 'G:\seeds' '/mnt/files/seeds/'  
+Copy migrate.sh to /home/user/.config/deluge/ and run ./migrate.sh 'G:\\seeds' '/mnt/files/seeds/'  
 
 ## Background
 
