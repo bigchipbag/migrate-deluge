@@ -1,5 +1,5 @@
-# migrate-deluge-windows-linux
-A script to move deluge from Windows to Linux with minimal file rechecks required
+# migrate-deluge
+A script to move deluge from Windows to Linux (and potentially more platform-to-platform as well) with minimal file rechecks required
 ## Usage
 
 Pause all torrents in Deluge on Windows. Use the File->Quit option to close Deluge, and verify the system tray icon is gone and the program is closed.
