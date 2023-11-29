@@ -14,8 +14,13 @@ If you don't copy this data over, Deluge will be in a strange configuration and 
 
 Pause all torrents in Deluge on Windows. Use the File->Quit option to close Deluge, and verify the system tray icon is gone and the program is closed.
 
-Copy your entire existing deluge config from C:\Users\USERNAME\AppData\Roaming\deluge to <INSERT LINUX PATH HERE>
+Copy your entire existing deluge config from C:\Users\USERNAME\AppData\Roaming\deluge to ~/.config/deluge
 
-Run the script <FILE NAME OF SCRIPT HERE> with the text to find and the text to replace as noted in the command
+Run the migrate script in your deluge config directory (~/.config/deluge) with the following arguments:
 
+./migrate.sh 'Windows download path' 'Linux download path'
+
+e.g. ./migrate.sh 'C:\downloads\' '/mnt/fileserver/downloads/'
+
+You'll need to repeat this command for every download folder you use on Windows. 
 Open deluge and confirm that all torrents show 100% and are still paused. Resume torrents and enjoy a migrated install without days of re-checking.
