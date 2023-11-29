@@ -2,7 +2,9 @@
 A script to update deluge download locations from platform to platform with minimal file rechecks required
 ## Usage
 In the target's deluge config directory run the following:
+
 ./migrate.sh 'Source's download path' 'Target's download path'
+
 Where the source download path is like 'C:\Downloads\' and Target's is like '/mnt/downloads/'
 
 ## Instructions
