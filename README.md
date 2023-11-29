@@ -1,7 +1,11 @@
 # migrate-deluge
-A script to move deluge from Windows to Linux (and potentially more platform-to-platform as well) with minimal file rechecks required
+A script to update deluge download locations from platform to platform with minimal file rechecks required
 ## Usage
+In the target's deluge config directory run the following:
+./migrate.sh 'Source's download path' 'Target's download path'
+Where the source download path is like 'C:\Downloads\' and Target's is like '/mnt/downloads/'
 
+## Instructions
 Pause all torrents in Deluge on Windows. Use the File->Quit option to close Deluge, and verify the system tray icon is gone and the program is closed.
 
 Copy your entire existing deluge config from C:\Users\USERNAME\AppData\Roaming\deluge to ~/.config/deluge
