@@ -6,7 +6,7 @@ A script to move deluge from windows to linux with minimal rechecks required
 
 Windows stores all the relevant Deluge configuration and states by default in C:\Users\USERNAME\AppData\Roaming\deluge 
 
-What is most relevant to a system transfer, especially with many torrents is to copy the state directory as it contains all torrents and statistics for the torrents, as well as the directory they are stored in and the percentage complete/available. 
+What is most relevant to a system transfer with many torrents is to migrate the state directory as it contains all torrents and statistics for the torrents, as well as the directory they are stored in and the percentage complete/available. 
 
 If you don't copy this data over, Deluge will be in a strange configuration and will probably discard all the states and statistics for torrents, and will force a re-check on the entire library. This can take days for terabytes of content, so ideally a script to update all references would be helpful.
 
