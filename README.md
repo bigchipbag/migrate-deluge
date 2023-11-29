@@ -1,5 +1,5 @@
 # migrate-deluge
-A script to update deluge download locations from platform to platform with minimal file rechecks required
+A script to update deluge download locations from platform to platform with minimal file rechecks required. Can also assist with situations where your OS causes issues with drive names/lettering, or if you want to manually rename folders or switch mount points and not wait for, nor rely on Deluge to do it for you (right click -> move storage)
 ## Usage
 In the target's deluge config directory run the following:
 
